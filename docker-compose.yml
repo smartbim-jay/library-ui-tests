@@ -1,0 +1,8 @@
+version: "2.1"
+services:
+  codeceptjs-container:
+    image: codeception/codeceptjs
+    environment:
+      - CODECEPT_ARGS=-c codecept.conf.js --steps
+    volumes:
+      - ./:/tests

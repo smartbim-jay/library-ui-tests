@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "codeceptjs": "^2.0.4",
+    "dotenv-safe": "^6.1.0",
+    "npm-watch": "^0.6.0",
+    "puppeteer": "^1.11.0"
+  },
+  "scripts": {
+    "watch": "./node_modules/.bin/npm-watch e2e",
+    "e2e": "./node_modules/.bin/codeceptjs run",
+    "parallel": "./node_modules/.bin/codeceptjs run-multiple parallel"
+  },
+  "watch": {
+    "e2e": "./src/*.js"
+  }
+}
